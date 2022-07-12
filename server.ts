@@ -12,6 +12,9 @@ app.use(
             watchPg: true,
             graphiql: true,
             enhanceGraphiql: true,
+            ignoreRBAC: false,
+            ownerConnectionString: process.env.OWNER_DATABASE_URL,
+            appendPlugins: [require('@graphile-contrib/pg-simplify-inflector')],
         })
 )
 
