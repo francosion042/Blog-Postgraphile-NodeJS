@@ -2,7 +2,7 @@
   "scripts": {
     "build": "npx tsc",
     "start": "node dist/server.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\""
+    "dev": "concurrently -k \"npx tsc --watch\" \"nodemon -q dist/server.js\""
   },
   "dependencies": {
     "@graphile-contrib/pg-simplify-inflector": "^6.1.0",
